@@ -6,8 +6,8 @@
             "use": "@vercel/node"
         },
         {
-            "src": "client",
-            "use": "@vercel/react"
+            "src": "client/index.jsx",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
