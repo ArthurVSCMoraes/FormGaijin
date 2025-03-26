@@ -241,7 +241,7 @@ const Responses = () => {
   useEffect(() => {
     const fetchResponses = async () => {
       try {
-        const response = await fetch('http://localhost:3000/obterFormularios');
+        const response = await fetch('https://form-gaijin.vercel.app/api/obterFormularios');
         if (!response.ok) {
           throw new Error(`Erro ao obter os dados: ${response.status}`);
         }
@@ -259,7 +259,7 @@ const Responses = () => {
 
   const handleRecruit = async (response) => {
     try {
-      const res = await fetch('http://localhost:3000/atualizarStatus', {
+      const res = await fetch('https://form-gaijin.vercel.app/api/atualizarStatus', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -287,7 +287,7 @@ const Responses = () => {
 
   const handleNotRecruit = async (response) => {
     try {
-      const res = await fetch('http://localhost:3000/atualizarStatus', {
+      const res = await fetch('https://form-gaijin.vercel.app/api/atualizarStatus', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
