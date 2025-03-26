@@ -5,15 +5,14 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
 
 // Rota para receber os dados do formulário
-app.post('/salvarFormulario', (req, res) => {
+app.post('/api/salvarFormulario', (req, res) => {
   const formData = req.body;
-  const filePath = path.join(__dirname, 'data', 'formResponses.json');
+  const filePath = path.join(__dirname, 'formResponses.json');
 
   const formDataJSON = JSON.stringify(formData, null, 2);
 
@@ -60,7 +59,7 @@ app.post('/salvarFormulario', (req, res) => {
 });
 
 // Rota para obter os dados do formulário
-app.get('/obterFormularios', (req, res) => {
+app.get('/api/obterFormularios', (req, res) => {
   const filePath = path.join(__dirname, 'data', 'formResponses.json');
 
   if (!fs.existsSync(filePath)) {
@@ -83,7 +82,7 @@ app.get('/obterFormularios', (req, res) => {
 });
 
 // Rota para atualizar o status de um candidato
-app.post('/atualizarStatus', (req, res) => {
+app.post('/api/atualizarStatus', (req, res) => {
   const { idInGame, status } = req.body; // Usei idInGame para identificar o candidato
   const filePath = path.join(__dirname, 'data', 'formResponses.json');
 
@@ -124,7 +123,7 @@ app.post('/atualizarStatus', (req, res) => {
   });
 });
 
-// Iniciar o servidor
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
-});
+// Isso é o mais importante para o Vercel
+module.exports = (req, res) => {
+  app(req, res);
+};
