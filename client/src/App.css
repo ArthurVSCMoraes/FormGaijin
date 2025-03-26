@@ -1,0 +1,91 @@
+body { 
+  margin: 0px;
+}
+
+.header {
+  width: 100%; 
+  height: 1019px; 
+  background-image: url('https://i.postimg.cc/SsvD6VB0/banner-Gaijin.png'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  position: relative;
+}
+
+#textHeader { 
+  color: white; 
+  font-size: 50px; 
+  top: 75%;
+  text-align: center; 
+  margin: 0px;
+  width: 70%;
+  padding-left: 15%;
+  font-family: "Jim Nightshade", cursive;
+  font-style: normal;
+  position: absolute;
+}
+
+.formArea { 
+  position: relative;
+}
+
+#japa {
+  position: absolute; 
+  right: 20px; 
+  top: 30%; 
+  transform: translateY(-50%); 
+  font-size: 50px; 
+  font-weight: bold; 
+  text-align: center; 
+  line-height: 1.5; 
+}
+
+#Req { 
+font-family: "Jim Nightshade", cursive;
+font-style: normal;
+font-size: 45px;
+color: rgb(120, 3, 216);
+}
+
+#ReqList {
+font-family: "Jim Nightshade", cursive;
+font-style: oblique;
+font-size: 25px;
+color: rgb(120, 3, 216);
+}
+
+#nameAndId {
+display: flex;
+justify-content: space-around
+}
+
+#ageAndNumber{
+display:flex;
+justify-content: space-around
+}
+
+.cloud img {
+  width: auto; /* A imagem terá exatamente o tamanho da tela */
+  height: auto; /* Mantém a proporção */
+  animation: rotationLeft 35s linear infinite;
+}
+
+.cloud {
+  background-color: rgba(110, 110, 110, 0.021);
+  position: absolute;
+  bottom: 20%;
+  width: 99vw; /* Garante que a largura seja exatamente a da tela */
+  height: auto; /* Mantém a proporção da imagem */
+  overflow: hidden; /* Impede que a imagem cause rolagem */
+  z-index: 1;
+}
+
+@keyframes rotationLeft {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-50%,0,0);
+  }
+
+}

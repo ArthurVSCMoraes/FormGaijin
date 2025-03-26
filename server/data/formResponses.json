@@ -1,0 +1,41 @@
+[
+  {
+    "nomeInGame": "a",
+    "idInGame": "s",
+    "idadeOffRp": "s",
+    "numeroInGame": "s",
+    "hierarquia": "s",
+    "faccao": "s",
+    "alien": "Saio correndo desesperado"
+  },
+  {
+    "nomeInGame": "a",
+    "idInGame": "a",
+    "idadeOffRp": "a",
+    "numeroInGame": "a",
+    "hierarquia": "a",
+    "faccao": "a",
+    "alien": "Saio correndo desesperado",
+    "status": "naoRecrutado"
+  },
+  {
+    "nomeInGame": "teste",
+    "idInGame": "teste",
+    "idadeOffRp": "teste",
+    "numeroInGame": "teste",
+    "hierarquia": "teste",
+    "faccao": "teste",
+    "alien": "Chamar ADM",
+    "status": "recrutado"
+  },
+  {
+    "nomeInGame": "Vulcano",
+    "idInGame": "1032",
+    "idadeOffRp": "23",
+    "numeroInGame": "55522222",
+    "hierarquia": "Bem, sempre respeitando",
+    "faccao": "Gaiji",
+    "alien": "Me esconder e chamar a polícia",
+    "status": "recrutado"
+  }
+]
